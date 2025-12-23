@@ -27,7 +27,7 @@ By engaging in this iterative process, ontology engineers can systematically exp
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/King-s-Knowledge-Graph-Lab/OntoScope.git
    cd ontoscope
    ```
 
