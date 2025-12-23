@@ -1,0 +1,560 @@
+{
+  "meta": {
+    "schema_version": "1.0",
+    "exported_at": "2025-12-23T11:39:55.885Z",
+    "domain": "University",
+    "session_id": "43300e60-a366-4e73-8bbc-c34b4517d479",
+    "total_questions": 33,
+    "total_intersections": 9
+  },
+  "dimensions": {
+    "domain_coverage_values": [
+      "academics",
+      "administration",
+      "campus"
+    ],
+    "terminology_granularity_values": [
+      "First-level",
+      "Second-level",
+      "Third-level"
+    ]
+  },
+  "intersections": [
+    {
+      "domain_coverage": "academics",
+      "terminology_granularity": "First-level",
+      "competency_questions": [
+        {
+          "id": "c659a5fe-7c0e-4a57-856e-8f040f27dc82",
+          "question": "What is the relation between instructor and curriculum?",
+          "type": "property",
+          "terminologies": [
+            "develops"
+          ],
+          "position": {
+            "x": 0.2,
+            "y": 0.2
+          },
+          "created": "2025-12-23T11:39:55.884Z"
+        },
+        {
+          "id": "ee6964c9-40d2-4012-bc35-2bfdb8736fa7",
+          "question": "What does division supervise?",
+          "type": "object",
+          "terminologies": [
+            "program"
+          ],
+          "position": {
+            "x": 0.2,
+            "y": 0.2
+          },
+          "created": "2025-12-23T11:39:55.884Z"
+        },
+        {
+          "id": "36288f2c-9943-4ccd-b9d4-259749cdd2c8",
+          "question": "Who organizes academic event?",
+          "type": "subject",
+          "terminologies": [
+            "committee"
+          ],
+          "position": {
+            "x": 0.2,
+            "y": 0.2
+          },
+          "created": "2025-12-23T11:39:55.884Z"
+        }
+      ]
+    },
+    {
+      "domain_coverage": "academics",
+      "terminology_granularity": "Second-level",
+      "competency_questions": [
+        {
+          "id": "724fcc5a-ed54-41b2-aae9-ed70e2234cb4",
+          "question": "What does academic advisor recommend?",
+          "type": "object",
+          "terminologies": [
+            "elective"
+          ],
+          "position": {
+            "x": 0.2,
+            "y": 0.5
+          },
+          "created": "2025-12-23T11:39:55.884Z"
+        },
+        {
+          "id": "26fd74e8-21af-4c44-bfcb-165ae170a88d",
+          "question": "Who advises honors thesis?",
+          "type": "subject",
+          "terminologies": [
+            "faculty mentor"
+          ],
+          "position": {
+            "x": 0.2,
+            "y": 0.5
+          },
+          "created": "2025-12-23T11:39:55.884Z"
+        },
+        {
+          "id": "3324961d-b4fb-44ad-a7ec-376749a89fe8",
+          "question": "What is the relation between graduate student and research group?",
+          "type": "property",
+          "terminologies": [
+            "participates in"
+          ],
+          "position": {
+            "x": 0.2,
+            "y": 0.5
+          },
+          "created": "2025-12-23T11:39:55.884Z"
+        }
+      ]
+    },
+    {
+      "domain_coverage": "academics",
+      "terminology_granularity": "Third-level",
+      "competency_questions": [
+        {
+          "id": "c6ae7683-df40-49e7-aad3-432c8823b65e",
+          "question": "What assists faculty member?",
+          "type": "subject",
+          "terminologies": [
+            "teaching assistant",
+            "research assistant",
+            "librarian",
+            "academic advisor"
+          ],
+          "position": {
+            "x": 0.2,
+            "y": 0.8
+          },
+          "created": "2025-12-23T11:39:55.884Z"
+        },
+        {
+          "id": "2c524b81-8878-4610-9a5e-a885fa069d4c",
+          "question": "What is the relation between instructor and seminar?",
+          "type": "property",
+          "terminologies": [
+            "leads"
+          ],
+          "position": {
+            "x": 0.2,
+            "y": 0.8
+          },
+          "created": "2025-12-23T11:39:55.884Z"
+        },
+        {
+          "id": "d686206d-2ad2-4345-b064-85875e8f6bc6",
+          "question": "What does lecturer coordinate?",
+          "type": "object",
+          "terminologies": [
+            "workshop"
+          ],
+          "position": {
+            "x": 0.2,
+            "y": 0.8
+          },
+          "created": "2025-12-23T11:39:55.884Z"
+        }
+      ]
+    },
+    {
+      "domain_coverage": "administration",
+      "terminology_granularity": "First-level",
+      "competency_questions": [
+        {
+          "id": "0ee7e1b8-0b2d-439b-b8cb-0ad12f55f66d",
+          "question": "What is the relation between executive board and strategic plan?",
+          "type": "property",
+          "terminologies": [
+            "approves",
+            "oversees",
+            "reviews",
+            "sets"
+          ],
+          "position": {
+            "x": 0.5,
+            "y": 0.2
+          },
+          "created": "2025-12-23T11:39:55.884Z"
+        },
+        {
+          "id": "e6296f64-fdcc-4ecc-a1df-e5344be0deeb",
+          "question": "What does administration implement?",
+          "type": "object",
+          "terminologies": [
+            "policy"
+          ],
+          "position": {
+            "x": 0.5,
+            "y": 0.2
+          },
+          "created": "2025-12-23T11:39:55.884Z"
+        },
+        {
+          "id": "6319de81-7e18-4591-a312-fce65c197739",
+          "question": "Who authorizes expenditure?",
+          "type": "subject",
+          "terminologies": [
+            "finance officer"
+          ],
+          "position": {
+            "x": 0.5,
+            "y": 0.2
+          },
+          "created": "2025-12-23T11:39:55.884Z"
+        }
+      ]
+    },
+    {
+      "domain_coverage": "administration",
+      "terminology_granularity": "Second-level",
+      "competency_questions": [
+        {
+          "id": "231c98a0-d791-49f0-b7e1-70d05e2038a2",
+          "question": "Who oversees committee?",
+          "type": "subject",
+          "terminologies": [
+            "chairperson"
+          ],
+          "position": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "created": "2025-12-23T11:39:55.884Z"
+        },
+        {
+          "id": "74e35795-e8da-4988-b108-b10e19c93fa5",
+          "question": "What is the relation between registrar and record?",
+          "type": "property",
+          "terminologies": [
+            "maintains"
+          ],
+          "position": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "created": "2025-12-23T11:39:55.884Z"
+        },
+        {
+          "id": "58cddc58-6c13-452b-a752-d9b7de26dd6a",
+          "question": "What does administrator schedule?",
+          "type": "object",
+          "terminologies": [
+            "meeting"
+          ],
+          "position": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "created": "2025-12-23T11:39:55.884Z"
+        },
+        {
+          "id": "a05c3454-6784-4ead-b63d-0899372750ff",
+          "question": "What does executive assign?",
+          "type": "object",
+          "terminologies": [
+            "responsibility"
+          ],
+          "position": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "created": "2025-12-23T11:39:55.884Z"
+        },
+        {
+          "id": "aa809775-08f9-415f-be54-4bd78a88b866",
+          "question": "Who supervises office unit?",
+          "type": "subject",
+          "terminologies": [
+            "operations coordinator"
+          ],
+          "position": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "created": "2025-12-23T11:39:55.884Z"
+        },
+        {
+          "id": "284f3e50-35dc-41d5-83ef-25e9f31bdabf",
+          "question": "What is the relation between coordinator and timetable?",
+          "type": "property",
+          "terminologies": [
+            "arranges"
+          ],
+          "position": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "created": "2025-12-23T11:39:55.884Z"
+        }
+      ]
+    },
+    {
+      "domain_coverage": "administration",
+      "terminology_granularity": "Third-level",
+      "competency_questions": [
+        {
+          "id": "33d9d0ac-9c66-47b5-814a-bc4ed4d33914",
+          "question": "What does payroll officer process?",
+          "type": "object",
+          "terminologies": [
+            "salary statement"
+          ],
+          "position": {
+            "x": 0.5,
+            "y": 0.8
+          },
+          "created": "2025-12-23T11:39:55.884Z"
+        },
+        {
+          "id": "a6051246-fd35-4b7f-ad4c-36d51930065c",
+          "question": "What is the relation between office assistant and mailroom?",
+          "type": "property",
+          "terminologies": [
+            "distributes to"
+          ],
+          "position": {
+            "x": 0.5,
+            "y": 0.8
+          },
+          "created": "2025-12-23T11:39:55.884Z"
+        },
+        {
+          "id": "355c1b0e-356b-4d63-b120-a8af8e90d024",
+          "question": "Who supervises orientation session?",
+          "type": "subject",
+          "terminologies": [
+            "event coordinator"
+          ],
+          "position": {
+            "x": 0.5,
+            "y": 0.8
+          },
+          "created": "2025-12-23T11:39:55.884Z"
+        }
+      ]
+    },
+    {
+      "domain_coverage": "campus",
+      "terminology_granularity": "First-level",
+      "competency_questions": [
+        {
+          "id": "636b3dd4-80ca-4e4a-bcdd-e2925f557c40",
+          "question": "What is the relation between organization and building?",
+          "type": "property",
+          "terminologies": [
+            "occupies"
+          ],
+          "position": {
+            "x": 0.8,
+            "y": 0.2
+          },
+          "created": "2025-12-23T11:39:55.884Z"
+        },
+        {
+          "id": "bfddc3a0-cdfe-4555-b3c6-e8a8a8e949d8",
+          "question": "Who operates facility?",
+          "type": "subject",
+          "terminologies": [
+            "staff"
+          ],
+          "position": {
+            "x": 0.8,
+            "y": 0.2
+          },
+          "created": "2025-12-23T11:39:55.884Z"
+        },
+        {
+          "id": "efecf217-5e64-4e76-9d1a-7398be3e65b0",
+          "question": "What does group utilize?",
+          "type": "object",
+          "terminologies": [
+            "resource",
+            "laboratory",
+            "classroom"
+          ],
+          "position": {
+            "x": 0.8,
+            "y": 0.2
+          },
+          "created": "2025-12-23T11:39:55.884Z"
+        }
+      ]
+    },
+    {
+      "domain_coverage": "campus",
+      "terminology_granularity": "Second-level",
+      "competency_questions": [
+        {
+          "id": "e473cdc1-af14-437d-8e10-34842fee7b7b",
+          "question": "Which maintains facility?",
+          "type": "subject",
+          "terminologies": [
+            "maintenance team"
+          ],
+          "position": {
+            "x": 0.8,
+            "y": 0.5
+          },
+          "created": "2025-12-23T11:39:55.884Z"
+        },
+        {
+          "id": "de7cc391-0f74-4b52-a446-2e38cf2114df",
+          "question": "What is the relation between student and lounge?",
+          "type": "property",
+          "terminologies": [
+            "relaxes in"
+          ],
+          "position": {
+            "x": 0.8,
+            "y": 0.5
+          },
+          "created": "2025-12-23T11:39:55.884Z"
+        },
+        {
+          "id": "83fd6256-4f74-4868-922a-04fc775dc617",
+          "question": "What does visitor access?",
+          "type": "object",
+          "terminologies": [
+            "information desk"
+          ],
+          "position": {
+            "x": 0.8,
+            "y": 0.5
+          },
+          "created": "2025-12-23T11:39:55.884Z"
+        }
+      ]
+    },
+    {
+      "domain_coverage": "campus",
+      "terminology_granularity": "Third-level",
+      "competency_questions": [
+        {
+          "id": "14eac444-083a-464f-9e1b-f5aaff831f63",
+          "question": "Who coordinates laboratory?",
+          "type": "subject",
+          "terminologies": [
+            "technical specialist"
+          ],
+          "position": {
+            "x": 0.8,
+            "y": 0.8
+          },
+          "created": "2025-12-23T11:39:55.884Z"
+        },
+        {
+          "id": "caf0eea4-9095-4da3-8cc8-b46a846c70be",
+          "question": "What is the relation between student group and recreation area?",
+          "type": "property",
+          "terminologies": [
+            "gathers in"
+          ],
+          "position": {
+            "x": 0.8,
+            "y": 0.8
+          },
+          "created": "2025-12-23T11:39:55.884Z"
+        },
+        {
+          "id": "92f8154f-bec3-4699-b26a-28ca5337914b",
+          "question": "What does department allocate?",
+          "type": "object",
+          "terminologies": [
+            "workspace"
+          ],
+          "position": {
+            "x": 0.8,
+            "y": 0.8
+          },
+          "created": "2025-12-23T11:39:55.884Z"
+        },
+        {
+          "id": "a1547f64-f177-42fe-834c-4e688c743b63",
+          "question": "What does technical team install?",
+          "type": "object",
+          "terminologies": [
+            "network device"
+          ],
+          "position": {
+            "x": 0.8,
+            "y": 0.8
+          },
+          "created": "2025-12-23T11:39:55.884Z"
+        },
+        {
+          "id": "ec58e45b-3a8e-49cd-be50-0382880b06aa",
+          "question": "What is the relation between alumni office and visitor center?",
+          "type": "property",
+          "terminologies": [
+            "coordinates with"
+          ],
+          "position": {
+            "x": 0.8,
+            "y": 0.8
+          },
+          "created": "2025-12-23T11:39:55.884Z"
+        },
+        {
+          "id": "544f885c-7bb3-4a60-8287-ae9b9ec8ea32",
+          "question": "Who supervises greenhouse?",
+          "type": "subject",
+          "terminologies": [
+            "horticulturist"
+          ],
+          "position": {
+            "x": 0.8,
+            "y": 0.8
+          },
+          "created": "2025-12-23T11:39:55.884Z"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "questions_by_type": {
+      "subject": 11,
+      "property": 11,
+      "object": 11
+    },
+    "questions_by_intersection": [
+      {
+        "intersection": "academics × First-level",
+        "count": 3
+      },
+      {
+        "intersection": "academics × Second-level",
+        "count": 3
+      },
+      {
+        "intersection": "academics × Third-level",
+        "count": 3
+      },
+      {
+        "intersection": "administration × First-level",
+        "count": 3
+      },
+      {
+        "intersection": "administration × Second-level",
+        "count": 6
+      },
+      {
+        "intersection": "administration × Third-level",
+        "count": 3
+      },
+      {
+        "intersection": "campus × First-level",
+        "count": 3
+      },
+      {
+        "intersection": "campus × Second-level",
+        "count": 3
+      },
+      {
+        "intersection": "campus × Third-level",
+        "count": 6
+      }
+    ]
+  }
+}

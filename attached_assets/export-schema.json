@@ -1,0 +1,164 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "OntoScope Export Schema",
+  "description": "Schema for exported competency question space data from OntoScope",
+  "type": "object",
+  "required": ["meta", "dimensions", "intersections", "summary"],
+  "properties": {
+    "meta": {
+      "type": "object",
+      "description": "Metadata about the export",
+      "required": ["schema_version", "exported_at", "domain", "session_id", "total_questions", "total_intersections"],
+      "properties": {
+        "schema_version": {
+          "type": "string",
+          "description": "Version of the export schema",
+          "example": "1.0"
+        },
+        "exported_at": {
+          "type": "string",
+          "format": "date-time",
+          "description": "ISO 8601 timestamp of when the export was created"
+        },
+        "domain": {
+          "type": "string",
+          "description": "Target domain for the ontology"
+        },
+        "session_id": {
+          "type": "string",
+          "description": "Unique identifier for the session"
+        },
+        "total_questions": {
+          "type": "integer",
+          "description": "Total number of competency questions in the export"
+        },
+        "total_intersections": {
+          "type": "integer",
+          "description": "Total number of intersections containing questions"
+        }
+      }
+    },
+    "dimensions": {
+      "type": "object",
+      "description": "Dimension values defining the CQ space axes",
+      "required": ["domain_coverage_values", "terminology_granularity_values"],
+      "properties": {
+        "domain_coverage_values": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Values along the domain coverage axis (X-axis)"
+        },
+        "terminology_granularity_values": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Values along the terminology granularity axis (Y-axis)"
+        }
+      }
+    },
+    "intersections": {
+      "type": "array",
+      "description": "Competency questions organized by intersection",
+      "items": {
+        "type": "object",
+        "required": ["domain_coverage", "terminology_granularity", "competency_questions"],
+        "properties": {
+          "domain_coverage": {
+            "type": "string",
+            "description": "Domain coverage value for this intersection"
+          },
+          "terminology_granularity": {
+            "type": "string",
+            "description": "Terminology granularity value for this intersection"
+          },
+          "competency_questions": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["id", "question", "type", "terminologies", "position", "created"],
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "description": "Unique identifier for the competency question"
+                },
+                "question": {
+                  "type": "string",
+                  "description": "The competency question text"
+                },
+                "type": {
+                  "type": "string",
+                  "enum": ["subject", "property", "object"],
+                  "description": "Type of competency question"
+                },
+                "terminologies": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "description": "Suggested terminology terms for this question"
+                },
+                "position": {
+                  "type": "object",
+                  "required": ["x", "y"],
+                  "properties": {
+                    "x": {
+                      "type": "number",
+                      "minimum": 0,
+                      "maximum": 1,
+                      "description": "Normalized X position (0-1)"
+                    },
+                    "y": {
+                      "type": "number",
+                      "minimum": 0,
+                      "maximum": 1,
+                      "description": "Normalized Y position (0-1)"
+                    }
+                  }
+                },
+                "created": {
+                  "type": "string",
+                  "format": "date-time",
+                  "description": "ISO 8601 timestamp of when the question was created"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "summary": {
+      "type": "object",
+      "description": "Summary statistics for the export",
+      "required": ["questions_by_type", "questions_by_intersection"],
+      "properties": {
+        "questions_by_type": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "integer"
+          },
+          "description": "Count of questions grouped by type (subject, property, object)"
+        },
+        "questions_by_intersection": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["intersection", "count"],
+            "properties": {
+              "intersection": {
+                "type": "string",
+                "description": "Intersection label in format 'domain × granularity'"
+              },
+              "count": {
+                "type": "integer",
+                "description": "Number of questions at this intersection"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
