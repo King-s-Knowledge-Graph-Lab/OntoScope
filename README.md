@@ -1,4 +1,4 @@
-# OntoScope: Using a Divergent-Convergent Interaction Framework to Support LLM-based Ontology Scoping
+# OntoScope
 
 ## Introduction
 
