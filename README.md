@@ -1,6 +1,6 @@
 ## OntoScope
 
-**OntoScope** is a web-based system prototype that implements a conceptual interaction model for LLM-based ontology scoping with competency questions (CQs), accessible at [ontoscope.digital](https://ontoscope.digital). It supports ontology engineers in progressively defining a well-scoped ontology by organising LLM-generated CQ candidates spatially along two dimensions: subdomains (horizontal) and term granularity (vertical), enabling both divergent thinking (exploring and generating new CQ candidates) and convergent thinking (refining and eliminating existing ones).
+**OntoScope** is a web-based interactive system prototype that implements a conceptual interaction model for LLM-based ontology scoping with competency questions (CQs), accessible at [ontoscope.digital](https://ontoscope.digital). It supports ontology engineers in progressively defining a well-scoped ontology by organising LLM-generated CQ candidates spatially along two dimensions: subdomains (horizontal) and term granularity (vertical), enabling both divergent thinking (exploring and generating new CQ candidates) and convergent thinking (refining and eliminating existing ones).
 
 [https://github.com/user-attachments/assets/849950d7-edc6-450e-a9ae-82430d413a4b](https://github.com/user-attachments/assets/c18ed333-c136-472c-94ca-0cc70e32d013)
 
