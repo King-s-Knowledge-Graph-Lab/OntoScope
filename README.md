@@ -9,7 +9,7 @@
 
 OntoScope is a web-based system prototype that helps ontology engineers define the scope of an ontology with competency questions (CQs). It accompanies our ACM IUI 2026 paper, *OntoScope: Using a Divergent-Convergent Interaction Framework to Support LLM-based Ontology Scoping*.
 
-https://github.com/user-attachments/assets/c18ed333-c136-472c-94ca-0cc70e32d013
+▶️ **[Watch the video presentation](https://yihangzhao.com/api/storage/public-objects/videos/ontoscope.mp4)**
 
 ## Overview
 
@@ -99,14 +99,21 @@ OntoScope/
 If you use OntoScope in your research, please cite our paper.
 
 ```bibtex
-@inproceedings{zhao2026ontoscope,
-  title     = {OntoScope: Using a Divergent-Convergent Interaction Framework to Support LLM-based Ontology Scoping},
-  author    = {Zhao, Yihang and Mero{\~n}o-Pe{\~n}uela, Albert and Simperl, Elena},
-  booktitle = {Proceedings of the 31st International Conference on Intelligent User Interfaces},
-  series    = {IUI '26},
-  year      = {2026},
-  publisher = {Association for Computing Machinery},
-  doi       = {10.1145/3742413.3789225}
+@inproceedings{10.1145/3742413.3789225,
+author = {Zhao, Yihang and Mero{\~n}o Pe{\~n}uela, Albert and Simperl, Elena},
+title = {OntoScope: Using a Divergent-Convergent Interaction Framework to Support LLM-based Ontology Scoping},
+year = {2026},
+isbn = {9798400719844},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3742413.3789225},
+doi = {10.1145/3742413.3789225},
+booktitle = {Proceedings of the 31st International Conference on Intelligent User Interfaces},
+pages = {67–84},
+numpages = {18},
+keywords = {Knowledge works, Knowledge engineering, Ontology engineering, KE, KG, OE, Requirements engineering, RE, Competency questions, CQ, Generative AI, GenAI, Artificial intelligence, AI, Large language models, LLM, User interface, UI, Interaction technics, Interaction design, IxD, Computational creativity, Creative thinking, Divergent thinking, Convergent thinking, Cognitive process},
+location = {Paphos, Cyprus},
+series = {IUI '26}
 }
 ```
 
