@@ -1,47 +1,119 @@
-## OntoScope
+# OntoScope
 
-**OntoScope** is a web-based system prototype that implements a conceptual interaction model for LLM-based ontology scoping with competency questions (CQs), accessible at [ontoscope.digital](https://ontoscope.digital). It supports ontology engineers in progressively defining a well-scoped ontology by organising LLM-generated CQ candidates spatially along two dimensions: subdomains (horizontal) and term granularity (vertical), enabling both divergent thinking (exploring and generating new CQ candidates) and convergent thinking (refining and eliminating existing ones).
+**An Interactive LLM-Based System for Supporting Divergent and Convergent Thinking in Ontology Scoping**
 
-[https://github.com/user-attachments/assets/849950d7-edc6-450e-a9ae-82430d413a4b](https://github.com/user-attachments/assets/c18ed333-c136-472c-94ca-0cc70e32d013)
+[![Paper](https://img.shields.io/badge/Paper-IUI%202026-blue)](https://dl.acm.org/doi/10.1145/3742413.3789225)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+![Node.js](https://img.shields.io/badge/Node.js-20%2B-339933?logo=node.js&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
 
-## Installation
+OntoScope is a web-based system prototype that helps ontology engineers define the scope of an ontology with competency questions (CQs). It accompanies our ACM IUI 2026 paper, *OntoScope: Using a Divergent-Convergent Interaction Framework to Support LLM-based Ontology Scoping*.
+
+https://github.com/user-attachments/assets/c18ed333-c136-472c-94ca-0cc70e32d013
+
+## Overview
+
+An ontology models knowledge in a domain. A domain has no natural boundary, so deciding what an ontology should cover relies on human judgement. Most existing tools, including LLM-based ones, automate this step and produce a large set of CQs in one go. This leaves people with limited control and output that is hard to audit.
+
+OntoScope instead represents the ontology scope as an externalised design space. The design space has two dimensions.
+
+- **Subdomain dimension** (horizontal) covers the breadth of the domain. Its values are subdomains.
+- **Granularity dimension** (vertical) covers the depth of the domain. Its values are granularity levels, from general to specific.
+
+Each pair of a subdomain and a granularity level forms a cell. Each cell holds CQs, and each CQ suggests terms for the ontology. The design space therefore contains three kinds of elements. These are the dimension values (subdomains and granularity levels), the CQs, and the terms each CQ suggests.
+
+People can manipulate all three kinds of elements to switch between two modes of thinking.
+
+- **Divergent thinking** means adding new subdomains, granularity levels, CQs, and terms.
+- **Convergent thinking** means refining, merging, and removing existing subdomains, granularity levels, CQs, and terms.
+
+## Features
+
+- Generate an initial design space from a target domain with an LLM, including subdomains, granularity levels, CQs, and terms
+- Add new subdomains, granularity levels, CQs, and terms to expand the scope
+- Spot gaps and redundancies across the design space through a visualisation
+- Refine, merge, and remove subdomains, granularity levels, CQs, and terms to narrow the scope
+- Export the final design space as JSON for use in ontology development tools
+
+## Tech Stack
+
+- **Frontend** React, TypeScript, Vite, Tailwind CSS
+- **Backend** Node.js server (in `server/`)
+- **LLM** OpenAI API
+
+## Project Structure
+
+```
+OntoScope/
+├── client/            # Frontend application
+├── server/            # Backend server and LLM integration
+├── shared/            # Types and schemas shared by client and server
+├── attached_assets/   # Static assets
+├── package.json
+└── vite.config.ts
+```
+
+## Getting Started
 
 ### Prerequisites
 
 - Node.js 20.x or higher
-- npm (comes with Node.js)
+- npm (included with Node.js)
 - An OpenAI API key
 
-### Steps
+### Installation
 
-1. **Clone the repository**
+1. Clone the repository.
+
    ```bash
    git clone https://github.com/King-s-Knowledge-Graph-Lab/OntoScope.git
-   cd ontoscope
+   cd OntoScope
    ```
 
-2. **Install dependencies**
+2. Install the dependencies.
+
    ```bash
    npm install
    ```
 
-3. **Start the application**
+3. Start the development server.
+
    ```bash
    npm run dev
    ```
 
-4. **Access the application**
-   
-   Open your browser and navigate to `http://localhost:5000`
+4. Open `http://localhost:5000` in your browser.
 
-5. **Enter your OpenAI API key**
-   
-   When prompted, enter your OpenAI API key to enable AI-powered CQ generation.
+5. Enter your OpenAI API key when prompted. The key enables LLM-based generation.
 
-### Usage
+## Usage
 
-1. Enter a target domain (e.g., "University Administration", "Healthcare Informatics")
-2. Click "Generate Space" to initialize the CQ space with AI-generated subdomains and granularity levels
-3. Click on any intersection to explore and add competency questions
-4. Use the visualization to identify gaps, delete redundant CQs, and refine terminology
-5. Export your finalized CQ space as JSON for use in ontology development tools
+1. Enter a target domain, for example "University Administration" or "Healthcare Informatics".
+2. Click **Generate Space** to create the design space with LLM-generated subdomains, granularity levels, CQs, and terms.
+3. Click any cell to explore it, and add new subdomains, granularity levels, CQs, or terms.
+4. Use the visualisation to identify gaps, then refine, merge, or remove subdomains, granularity levels, CQs, and terms.
+5. Export the final design space as JSON.
+
+## Citation
+
+If you use OntoScope in your research, please cite our paper.
+
+```bibtex
+@inproceedings{zhao2026ontoscope,
+  title     = {OntoScope: Using a Divergent-Convergent Interaction Framework to Support LLM-based Ontology Scoping},
+  author    = {Zhao, Yihang and Mero{\~n}o-Pe{\~n}uela, Albert and Simperl, Elena},
+  booktitle = {Proceedings of the 31st International Conference on Intelligent User Interfaces},
+  series    = {IUI '26},
+  year      = {2026},
+  publisher = {Association for Computing Machinery},
+  doi       = {10.1145/3742413.3789225}
+}
+```
+
+## License
+
+This project is released under the [MIT License](LICENSE).
+
+## Contact
+
+For questions or feedback, please open an [issue](https://github.com/King-s-Knowledge-Graph-Lab/OntoScope/issues) or contact Yihang Zhao (King's College London).
